@@ -1,0 +1,36 @@
+<!--Adding income cards-->
+	<div class="input-group-lg" ng-controller="walletController" ng-show="">
+			<div ng-controller="DatepickerDemoCtrl">
+             <div class="input-group">
+              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+          	 </div>
+          </div>
+		  <input type="text" class="form-control" placeholder='Amount'/>
+		  <input type="text" class="form-control" placeholder='Payee'/>
+		  <label>Category:</label>
+		  <select ng-model="">
+		  	<option value="Allowance">Allowance</option>
+		  	<option value="Savings">Savings</option>
+		  	<option value="Part-time job">Part-time job</option>
+		  	<option value="Internship">Internship</option>
+		  	<option value="Account transfers">Account transfers</option>
+		  </select><br/>
+			<input type="radio" ng-model="dr" name="" value="">Repeat</input><br/>
+	 			<div class='col-md-6' align='left'>
+	 			<radiogroup>
+				<input type="radio" ng-model="rpt" name="">Daily</input>
+				<input type="radio" ng-model="rpt" name="">Weekly</input>
+				<input type="radio" ng-model="rpt" name="">Bi-weekly</input>
+				<input type="radio" ng-model="rpt" name="">Monthly</input>
+				<input type="radio" ng-model="rpt" name="">Quarterly</input>
+				<input type="radio" ng-model="rpt" name="">Half-yearly</input>
+				<input type="radio" ng-model="rpt" name="">Annually</input>
+				<radiogroup>
+				</div>
+		  <button ng-submit='' align='right' type="button" class="btn btn-primary btn-block">Submit</button>
+		</div>
+</div>
+<br/>
