@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.mongoose = require('mongoose');
 var userSchema = app.mongoose.Schema();
 //mongodb connection
- app.mongoose.connect('mongodb://localhost/Air',function(err,res){
+ app.mongoose.connect('mongodb://localhost/lastpage',function(err,res){
     if(!err){
         console.log('Database connected successfully');
     }

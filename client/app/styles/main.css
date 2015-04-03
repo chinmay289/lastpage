@@ -10,6 +10,24 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.nom {
+   height: 48px;
+   width: 100%;
+   color: #8a8383;
+   font-familt: notosans-regular, sans-serif;
+   background: #383232 url(../images/header-bg.jpg);
+}
+
+.tetrix {
+  position: relative;
+   font: 14px raleway-bold, sans-serif;
+   /*float: right;*/
+   /*margin-top: 36px;*/
+   /*margin-right: 20px;*/
+   z-index: 99999;
+}
+
 body {
   padding: 0;
 }

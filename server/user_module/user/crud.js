@@ -2,13 +2,12 @@ module.exports= function(){
 
 	// var appObject = params.appObject;
 	var userModel = require('./schema.js')();
+	console.log(userModel);
 
 	var findUser = function(req,res,next){
 		User.find(exec(function(err, results){
 		
 			req.params.UserDetails = result;
-			console.log(result);
-			res.send(result);
 			next();
 		}));
 	}

@@ -4,12 +4,12 @@ module.exports = function(params){
 	var appObject = params.appObject;
 	
 
-	var notice = require('./user_module/notice/routes')({appObject: appObject});
-	var exam = require('./user_module/exam/routes')({appObject: appObject});
-	var login = require('./user_module/login/routes')({appObject: appObject});
-	var assignment = require('./user_module/assignment/routes')({appObject: appObject});
-	var attendance = require('./user_module/attendance/routes')({appObject: appObject});
-	var timetable = require('./user_module/timetable/routes')({appObject: appObject});
+	var note = require('./user_module/note/routes')({appObject: appObject});
+	// var exam = require('./user_module/exam/routes')({appObject: appObject});
+	// var login = require('./user_module/login/routes')({appObject: appObject});
+	// var assignment = require('./user_module/assignment/routes')({appObject: appObject});
+	// var attendance = require('./user_module/attendance/routes')({appObject: appObject});
+	// var timetable = require('./user_module/timetable/routes')({appObject: appObject});
 	var user = require('./user_module/user/routes')({appObject: appObject});
 
 
@@ -32,12 +32,12 @@ module.exports = function(params){
 
 	appObject.use('/',router);
 
-	appObject.use('/notice',notice);
-	appObject.use('/exam',exam);
-	appObject.use('/assignment',assignment);
-	appObject.use('/attendance', attendance);
-	appObject.use('/login', login);
-	appObject.use('/timetable', timetable);
+	appObject.use('/note',note);
+	// appObject.use('/exam',exam);
+	// appObject.use('/assignment',assignment);
+	// appObject.use('/attendance', attendance);
+	// appObject.use('/login', login);
+	// appObject.use('/timetable', timetable);
 	appObject.use('/user', user);
 
 

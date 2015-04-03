@@ -1,7 +1,8 @@
-module.exports= function(){
+module.exports= function(params){
 
-	// var appObject = params.appObject;
+	var appObject = params.appObject;
 	var userSchema = require('./schema.js')();
+	console.log(userSchema);
 
 	// var findUser = function(req,res,next){
 	// 	User.find(exec(function(err, results){

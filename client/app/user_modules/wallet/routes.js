@@ -7,11 +7,11 @@ angular.module('wallet',['ui.router'])
       	.state('account', {
 	      url: '/account',
 	      templateUrl: 'user_modules/shared/account.html'
-	     });
-	    // .state('wallet',{
-     //  		url:'/wallet',
-     //  		templateUrl: '/user_modules/wallet/account.wallet.html'
-     //  	});
+	     })
+	    .state('account.wallet',{
+      		url:'/wallet',
+      		templateUrl: '/user_modules/wallet/wallet.html'
+      	});
       	// .state('account.wallet.income',{
       	// 	url:'/income',
       	// 	templateUrl: '/user_modules/wallet/wallet-income.html'
